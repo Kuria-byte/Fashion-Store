@@ -10,8 +10,8 @@ const HomePage = () => {
     return (
         <div>
             <HomeSlider />
-            <ShopCarousel />
             <CollectionOverview />
+             <ShopCarousel />
             <Promotion />
             <Newsletter />
             <Footer />

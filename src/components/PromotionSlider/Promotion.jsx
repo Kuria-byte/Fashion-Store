@@ -51,8 +51,9 @@ const Promotion = () => {
                                             <span className="old-price">Was $17.99</span>
                                         </div>
                                     </div>
-                                    <span className="action">shop now</span>
+                                    <a href='/shop' className="action">shop now</a>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
