@@ -75,9 +75,13 @@ class App extends React.Component {
               <SpinnerRoundFilled size={100} thickness={180} speed={91} color="rgba(172, 137, 57, 1)" style={styles} /> :
               <Route exact path="/shop" component={ShopPage} />}
               <Route exact path="/login" component={SignInModal} />
+             
+
           </Switch>
+        
 
         </div>
+      
       </div>
 
     )

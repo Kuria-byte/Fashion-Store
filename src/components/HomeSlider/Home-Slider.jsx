@@ -41,20 +41,20 @@ function HomeSlider() {
         <div className="intro-slider-container">
                 <div className="intro-slider owl-carousel owl-theme owl-nav-inside owl-light" data-toggle="owl">
                     <OwlCarousel {...owl_options} nav>
-                    <div className="intro-slide"  style={{ backgroundImage: `url(${Slider3})`,}} >
-                        <div className="container intro-content text-center">
-                            <h3 className="intro-subtitle text-white">Vibrant Colors</h3>
-                            <h1 className="intro-title text-white"> Get Started </h1>
-                            <a href="/shop" className="btn btn-outline-white-4" >
-                                <span>Discover More</span>
-                            </a>
-                        </div>
-                    </div>
                     <div className="intro-slide" style={{ backgroundImage: `url(${Slider1})`}} >
                         <div className="container intro-content text-center">
                             <h3 className="intro-subtitle text-white">You're Looking Good</h3>
                               <h1 className="intro-title text-white">Tailored Look</h1>
                             <a href="/shop" className="btn btn-outline-white-4">
+                                <span>Discover More</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="intro-slide"  style={{ backgroundImage: `url(${Slider3})`,}} >
+                        <div className="container intro-content text-center">
+                            <h3 className="intro-subtitle text-white">Vibrant Colors</h3>
+                            <h1 className="intro-title text-white"> Get Started </h1>
+                            <a href="/shop" className="btn btn-outline-white-4" >
                                 <span>Discover More</span>
                             </a>
                         </div>

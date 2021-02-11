@@ -25,6 +25,7 @@
     "react-stripe-checkout": "^2.6.3",
     "react-toastify": "^7.0.3",
     "react-toggle-dark-mode": "^1.0.3",
+    "react-whatsapp-widget": "^1.2.1",
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
     "redux-persist": "^6.0.0",

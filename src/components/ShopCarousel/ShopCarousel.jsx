@@ -24,9 +24,9 @@ const ShopCarousel = ( {collections}) => {
                         <li className="nav-item">
                             <a className="nav-link" id="trending-Sneakers-link" data-toggle="tab" href="#trending-Sneakers-tab" role="tab" aria-controls="trending-Sneakers-tab" aria-selected="false">Shoes</a>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <a className="nav-link" id="trending-Hats-link" data-toggle="tab" href="#trending-Hats-tab" role="tab" aria-controls="trending-Hats-tab" aria-selected="false">Hats</a>
-                        </li>
+                        </li> */}
                         <li className="nav-item">
                             <a className="nav-link" id="trending-Jackets-link" data-toggle="tab" href="#trending-Jackets-tab" role="tab" aria-controls="trending-Jackets-tab" aria-selected="false">Jackets</a>
                         </li>

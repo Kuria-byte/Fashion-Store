@@ -29,10 +29,10 @@ const Promotion = () => {
                                     </figure>
 
                                     <div className="product-body">
-                                        <h3 className="product-title"><a href="/">Elasticated cotton shorts</a></h3>
+                                        <h3 className="product-title"><a href="/">Elasticated shorts</a></h3>
                                         <div className="product-price">
                                             <span className="new-price">Now $24.99</span>
-                                            <span className="old-price">Was $30.99</span>
+                                            {/* <span className="old-price">Was $30.99</span> */}
                                         </div>
                                     </div>
                                     <span className="action">shop now</span>
