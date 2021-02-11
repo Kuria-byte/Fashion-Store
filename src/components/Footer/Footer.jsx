@@ -13,13 +13,13 @@ const Footer = () => {
                             <div className="col-sm-6 col-lg-3">
                                 <div className="widget widget-about">
                                     <h4 className="widget-title">about shop</h4>
-                                    <p>Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. </p>
+                                    <p>A modern fashion store where design meets aeshetics, elegance and sophistication </p>
 
                                     <div className="social-icons">
-                                        <a href="/" className="social-icon" title="Facebook" target="_blank"><i className="icon-facebook-f"></i></a>
-                                        <a href="/" className="social-icon" title="Twitter" target="_blank"><i className="icon-twitter"></i></a>
-                                        <a href="/" className="social-icon" title="Instagram" target="_blank"><i className="icon-instagram"></i></a>
-                                        <a href="/" className="social-icon" title="Youtube" target="_blank"><i className="icon-youtube"></i></a>
+                                        <a href="https://www.facebook.com/emoeror.kushcash" className="social-icon" title="Facebook" rel="noreferrer" target="_blank"><i className="icon-facebook-f"></i></a>
+                                        <a href="https://twitter.com/_iankuria?lang=en" className="social-icon" title="Twitter" rel="noreferrer" target="_blank"><i className="icon-twitter"></i></a>
+                                        <a href="https://www.instagram.com/_iankuria/?hl=en" rel="noreferrer" className="social-icon" title="Instagram" target="_blank"><i className="icon-instagram"></i></a>
+                                        <a href="https://twitter.com/_iankuria?lang=en" className="social-icon" title="Youtube" rel="noreferrer" target="_blank"><i className="icon-youtube"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -32,8 +32,8 @@ const Footer = () => {
                                         <li><a href="about.html">About Shop</a></li>
                                         <li><a href="/">How to shop</a></li>
                                         <li><a href="/">FAQ</a></li>
-                                        <li><a href="contact.html">Contact us</a></li>
-                                        <li><a href="login.html">Log in</a></li>
+                                        <li><a href="/">Contact us</a></li>
+                                    
                                     </ul>
                                 </div>
                             </div>
@@ -76,7 +76,7 @@ const Footer = () => {
                             <img src={Image1} alt="Payment methods" width="272" height="20" />
                         </figure>
                         <img src={Logo} alt="FooterLogo" width="82" height="25" />
-                        <p className="footer-copyright">Copyright © 2020 KuriaByte. All Rights Reserved.</p>
+                        <p className="footer-copyright">Copyright © 2021 KuriaByte. All Rights Reserved.</p>
                     </div>
                 </div>
             </footer>

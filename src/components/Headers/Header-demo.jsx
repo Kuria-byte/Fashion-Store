@@ -54,32 +54,16 @@ const Header = ({ hidden, toggleMobileMenu, currentUser, logOut, history }) => {
             </div>
             <div className='header-right'>
               <div className='social-icons social-icons-color'>
-                <a
-                  href='/'
-                  className='social-icon social-facebook'
-                  title='Facebook'
-                  target='_blank'><i className='icon-facebook-f'></i></a>
-                <a
-                  href='/'
-                  className='social-icon social-twitter'
-                  title='Twitter'
-                  target='_blank'><i className='icon-twitter'></i></a>
-                <a
-                  href='/'
-                  className='social-icon social-pinterest'
-                  title='Instagram'
-                  target='_blank'><i className='icon-pinterest-p'></i></a>
-                <a
-                  href='/'
-                  className='social-icon social-instagram'
-                  title='Pinterest'
-                  target='_blank'><i className='icon-instagram'></i></a>
+                <a href="https://www.facebook.com/emoeror.kushcash" className="social-icon" title="Facebook" rel="noreferrer" target="_blank"><i className="icon-facebook-f"></i></a>
+                <a href="https://twitter.com/_iankuria?lang=en" className="social-icon" title="Twitter" rel="noreferrer" target="_blank"><i className="icon-twitter"></i></a>
+                <a href="https://www.instagram.com/_iankuria/?hl=en" rel="noreferrer" className="social-icon" title="Instagram" target="_blank"><i className="icon-instagram"></i></a>
+                <a href="https://github.com/Kuria-byte" className="social-icon" title="Youtube" rel="noreferrer" target="_blank"><i className="icon-github"></i></a>
               </div>
               <ul className='top-menu top-link-menu'>
                 <li>
                   <a href='/'>Links</a>
                   <ul>
-                    { currentUser  ?
+                    {currentUser ?
                       (<li>
                         <span data-toggle='modal' onClick={handleClick}><i className='icon-user'></i>Logout</span>
                       </li>) :
