@@ -3,7 +3,7 @@ import React from 'react'
 import OwlCarousel from 'react-owl-carousel'
 //images
 import Slider1 from '../../assets/images/demos/demo-6/slider/slide5.jpg'
-import Slider2 from '../../assets/images/demos/demo-6/slider/slide9.jpg'
+import Slider2 from '../../assets/images/demos/demo-6/slider/sweaterbg.jpg'
 import Slider3 from '../../assets/images/demos/demo-6/slider/slide8.jpg'
 
 const owl_options = {
@@ -62,8 +62,8 @@ function HomeSlider() {
             
                     <div className="intro-slide"  style={{ backgroundImage: `url(${Slider2})`,}} >
                         <div className="container intro-content text-center">
-                            <h3 className="intro-subtitle text-white">Don’t Miss</h3>
-                            <h1 className="intro-title text-white"> Women in style </h1>
+                            <h3 className="intro-subtitle text-white">Wardrobe Upgrade</h3>
+                            <h1 className="intro-title text-white"> Fresh Style </h1>
                             <a href="/shop" className="btn btn-outline-white-4" >
                                 <span>Discover More</span>
                             </a>

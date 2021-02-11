@@ -1,5 +1,5 @@
-import banner1 from '../../assets/images/demos/demo-6/banners/women7.jpg'
-import banner2 from '../../assets/images/demos/demo-6/banners/men5.jpg'
+import banner1 from '../../assets/images/demos/demo-6/banners/women14.jpg'
+import banner2 from '../../assets/images/demos/demo-6/banners/men12.jpg'
 
 
 const INITIAL_STATE ={

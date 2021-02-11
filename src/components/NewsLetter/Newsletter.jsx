@@ -2,7 +2,7 @@ import React from 'react'
 //component
 import BrandsBanner from './BrandsBanner'
 //images
-import banner from '../../assets/images/demos/demo-6/banners/banner-3.jpg'
+import banner from '../../assets/images/demos/demo-6/banners/sweater.jpg'
 
 
 const Newsletter = () => {
