@@ -4,9 +4,10 @@ import Toastify from 'toastify-js'
 
 //utils
 import { addCartItems } from '../../Redux/Cart/cart.actions'
+import { addWishItem } from '../../Redux/Wish/wish.actions'
 
 
-const ShopProduct = ({ item, title, addCartItems }) => {
+const ShopProduct = ({ item, title, addCartItems , addWishItem}) => {
     const { name, price, imageUrl } = item;
     async function cartAdd() {
         addCartItems(item);
@@ -22,6 +23,20 @@ const ShopProduct = ({ item, title, addCartItems }) => {
         }).showToast();
     }
 
+    async function wishAdd() {
+        addWishItem(item);
+        Toastify({
+          text: `Added ${name} to WishList`,
+          duration: 5000, 
+          newWindow: true,
+          close: true,
+          gravity: "bottom", // `top` or `bottom`
+          position: 'center', // `left`, `center` or `right`
+          backgroundColor: "linear-gradient(to right top, #cc9966, #c6946c, #bf9072, #b68c77, #ac897b)",
+          stopOnFocus: true, 
+        }).showToast();
+      }
+
     return (
         <div className="col-6 col-md-4 col-lg-4 col-xl-3">
             <div className="product">
@@ -32,7 +47,7 @@ const ShopProduct = ({ item, title, addCartItems }) => {
                     </span>
 
                     <div className="product-action-vertical">
-                        <a href="/" className="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                        <span className="btn-product-icon btn-wishlist btn-expandable"  onClick={ ()=> wishAdd()}><span>add to wishlist</span></span>
                     </div>
 
                     <div className="product-action action-icon-top">
@@ -53,7 +68,7 @@ const ShopProduct = ({ item, title, addCartItems }) => {
                         <div className="ratings">
                             <div className="ratings-val" style={{ width: '0%' }}></div>
                         </div>
-                        <span className="ratings-text">( 0 Reviews )</span>
+                        <span className="ratings-text">( 2 Reviews )</span>
                     </div>
 
                     <div className="product-nav product-nav-dots">
@@ -67,7 +82,8 @@ const ShopProduct = ({ item, title, addCartItems }) => {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-    addCartItems: item => dispatch(addCartItems(item))
+    addCartItems: item => dispatch(addCartItems(item)),
+    addWishItem: item => dispatch(addWishItem(item))
 })
 
 export default connect(null, mapDispatchToProps)(ShopProduct)

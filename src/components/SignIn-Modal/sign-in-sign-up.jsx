@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import Swal from 'sweetalert2'
+import Toastify from 'toastify-js'
 // Utils
 import { googleSignInStart, emailSignInStart, emailSignUpStart } from '../../Redux/User/user.actions'
 
@@ -53,7 +54,26 @@ class SignInModal extends Component {
     handleChange = (event) => {
         const { value, name } = event.target;
         this.setState({ [name]: value })
+    };
+
+    handleFaceBook = () => {
+
+        Toastify({
+            text: 'Oops! Facebook Login is still under development, we suggest you use Google or email to sign up',
+            backgroundColor: "linear-gradient(to right top, #cc9966, #c6946c, #bf9072, #b68c77, #ac897b)",
+            className: "info",
+            duration: 8000,
+            newWindow: true,
+            close: true,
+            gravity: "Top", // `top` or `bottom`
+            position: 'center', // `left`, `center` or `right`
+            stopOnFocus: true,
+        }).showToast()
     }
+
+
+
+
 
     render() {
         const { googleSignInStart } = this.props;
@@ -115,7 +135,16 @@ class SignInModal extends Component {
                                                 Login With Google
                                             </span>
                                                     </div>
-                                                    <div className="col-sm-6"  >
+                                                    <div className="col-sm-6" onClick={() => Toastify({
+                                                        text: 'Oops! we suggest you use Google or email to sign up',
+                                                        className: "info",
+                                                        duration: 8000,
+                                                        newWindow: true,
+                                                        close: true,
+                                                        gravity: "Top", // `top` or `bottom`
+                                                        position: 'center', // `left`, `center` or `right`
+                                                        stopOnFocus: true,
+                                                    }).showToast()} >
                                                         <span className="btn btn-login btn-f">
                                                             <i className="icon-facebook-f"></i>
                                                 Login With Facebook
@@ -160,11 +189,20 @@ class SignInModal extends Component {
                                                 Login With Google
                                             </a>
                                                     </div>
-                                                    <div className="col-sm-6">
-                                                        <a href="/" className="btn btn-login  btn-f">
+                                                    <div className="col-sm-6" onClick={() => Toastify({
+                                                        text: 'Oops! we suggest you use Google or email to sign up',
+                                                        className: "info",
+                                                        duration: 8000,
+                                                        newWindow: true,
+                                                        close: true,
+                                                        gravity: "Top", // `top` or `bottom`
+                                                        position: 'center', // `left`, `center` or `right`
+                                                        stopOnFocus: true,
+                                                    }).showToast()}>
+                                                        <span className="btn btn-login  btn-f">
                                                             <i className="icon-facebook-f"></i>
                                                 Login With Facebook
-                                            </a>
+                                            </span>
                                                     </div>
                                                 </div>
                                             </div>

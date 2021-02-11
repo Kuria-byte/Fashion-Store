@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect'
 //utils
 import { selectCollectioinForPreview } from '../../Redux/Shop/shop.selector'
+import Toastify from 'toastify-js'
 //images
 import imageBackground from '../../assets/images/page-header-bg.jpg'
 //component
@@ -11,11 +12,11 @@ import CollectionHolder from '../Product/collection-holder'
 const ShopPage = ({ collections }) => {
 
 
-   
 
-    
+
+
     const [userSelect, setSelected] = useState('Womens')
-    
+
 
     const handleRadioSelect = (event) => {
         const selectedValue = event.target.value;
@@ -23,11 +24,6 @@ const ShopPage = ({ collections }) => {
 
     }
 
-    
-
-    // var collectionArraywithObjects = collections.map(item => ({ id : item.id, title: item.title, items:{ ...item.items}}))
-    // var collectionItems ={...collectionArraywithObjects}
-    // console.log(collectionItems);
 
     return (
 
@@ -62,7 +58,7 @@ const ShopPage = ({ collections }) => {
                             <div className="toolbox-sort">
                                 <label for="sortby">Sort by:</label>
                                 <div className="select-custom">
-                                    <select className="form-control"  onChange={handleRadioSelect}>
+                                    <select className="form-control" onChange={handleRadioSelect}>
                                         <option value="Hats" >Hats</option>
                                         <option selected value="Womens">Women</option>
                                         <option value="Mens">Men</option>
@@ -79,13 +75,22 @@ const ShopPage = ({ collections }) => {
                         <div className="row">
 
                             {collections.map(({ id, ...otherCollectionProps }) => (
-                                <CollectionHolder key={id} {...otherCollectionProps} stateTitle={userSelect}  />
+                                <CollectionHolder key={id} {...otherCollectionProps} stateTitle={userSelect} />
                             ))}
 
                         </div>
 
                         <div className="load-more-container text-center">
-                            <a href="/" className="btn btn-outline-darker btn-load-more">More Products <i className="icon-refresh"></i></a>
+                            <span className="btn btn-outline-darker btn-load-more" onClick={() => Toastify({
+                                text: `More Items coming soon 🎉`,
+                                backgroundColor: "linear-gradient(to right top, #cc9966, #c6946c, #bf9072, #b68c77, #ac897b)",
+                                duration: 8000,
+                                newWindow: true,
+                                close: true,
+                                gravity: "Top", // `top` or `bottom`
+                                position: 'center', // `left`, `center` or `right`
+                                stopOnFocus: true,
+                            }).showToast()}>More Products <i className="icon-refresh"></i></span>
                         </div>
                     </div>
 
