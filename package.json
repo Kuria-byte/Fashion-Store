@@ -1,0 +1,65 @@
+{
+  "name": "my-shop",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.3",
+    "@testing-library/user-event": "^12.6.2",
+    "bootstrap": "^4.6.0",
+    "emailjs": "^3.4.0",
+    "emailjs-com": "^2.6.4",
+    "firebase": "^8.2.5",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
+    "react": "^17.0.1",
+    "react-bootstrap": "^1.4.3",
+    "react-dark-mode-toggle": "0.0.10",
+    "react-dom": "^17.0.1",
+    "react-owl-carousel": "^2.3.3",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.1",
+    "react-stripe-checkout": "^2.6.3",
+    "react-toastify": "^7.0.3",
+    "react-toggle-dark-mode": "^1.0.3",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^6.0.0",
+    "redux-saga": "^1.1.3",
+    "register-service-worker": "^1.7.2",
+    "reselect": "^4.0.0",
+    "spinners-react": "^1.0.4",
+    "styled-components": "^5.2.1",
+    "sweetalert2": "^10.14.0",
+    "sweetalert2-react": "^0.8.3",
+    "toastify-js": "^1.9.3",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
