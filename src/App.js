@@ -14,6 +14,7 @@ import { selectCurrentUser } from './Redux/User/user.selector';
 import { fetchCollectionStart } from './Redux/Shop/shop.actions'
 import { selectIsCollectionFetching } from './Redux/Shop/shop.selector'
 import { SpinnerRoundFilled, SpinnerDotted } from 'spinners-react';
+import MetaTags from 'react-meta-tags';
 
 // Styling and Plugins
 import './assets/vendor/line-awesome/line-awesome/line-awesome/css/line-awesome.min.css'
@@ -27,6 +28,7 @@ import './assets/css/plugins/jquery.countdown.css'
 import './assets/css/style.css'
 import './assets/css/skins/skin-demo-6.css'
 import './assets/css/demos/demo-6.css'
+import image from './Images/fashion.jpg'
 
 
 
@@ -58,6 +60,13 @@ class App extends React.Component {
 
       <div className='App'>
         <div class='page-wrapper'>
+        <MetaTags>
+            <title>Fashion Shop</title>
+            <meta name="description" content="A modern fashion store where fashion meets elegance." />
+            <meta property="og:title" content="Ecommerce" />
+            <meta property="og:image" content="https://ibb.co/f0WMLGJ" />
+            <meta property="og:image" content={image} />
+          </MetaTags>
           <Header />
           <Switch>
             {
