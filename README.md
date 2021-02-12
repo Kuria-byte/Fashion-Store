@@ -1,6 +1,39 @@
+# Fashion-store
+![image](https://user-images.githubusercontent.com/61579772/107754001-d18c0c80-6d5b-11eb-889a-b7543e05df1a.png)
+
+## About
+This is an ecoomerce web application built using react inorder too grasp deeper state management concepts
+- https://kuriadev.tech/
+
+ 
+## What's in Store📐
+- User authentication and database implemented with google firebase
+- Used React-router for dynamic web navigation
+- Complex state management managed by Redux with memorized selectors
+- Used Redux-Persist and local storage for persistence
+- Implemented credit card payment with stripe
+- Asynchronous API request handled with Redux -saga
+- Mobile responsive supported
+- Invoice via emailJs
+- Dynamic notifications by Swal and Toastify
+- Dynamic Filtering ( Shop by categories)
+- Deployed on vercel
+
+## Project Structure🚀
+The structure of the web app
+
+- assets- all common scripts and stylings (css), fonts used on the pages, theme scripts included in script.js file
+- src - all jsx files
+- components - all react components
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Start
+- git clone the proect
+- npm install
 
 ## Available Scripts
 
@@ -19,52 +52,16 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### References
+- https://www.divinector.com/
+- https://www.sitepoint.com/how-to-create-an-ecommerce-site-with-react/
+- http://fancyapps.com/fancybox/3/
+- https://ivy555.medium.com/learn-stepwise-to-create-e-commerce-website-in-react-with-redux-dca78932a761
+- https://owlcarousel2.github.io/OwlCarousel2/
+- http://www.hackingwithreact.com/read/1/13/rendering-an-array-of-data-with-map-and-jsx
+- https://reactjs.org/docs/lists-and-keys.html
+- https://developers.facebook.com/docs/graph-api/
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Inspiration ❤
+- https://www.awwwards.com/
