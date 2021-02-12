@@ -1,9 +1,10 @@
 # Fashion-store
 ![image](https://user-images.githubusercontent.com/61579772/107754001-d18c0c80-6d5b-11eb-889a-b7543e05df1a.png)
+![image](https://user-images.githubusercontent.com/61579772/107755160-6b07ee00-6d5d-11eb-8678-c311265c996f.png)
 
 ## About
 This is an ecoomerce web application built using react inorder too grasp deeper state management concepts
-- https://kuriadev.tech/
+- https://fashion-store.kuria-byte.vercel.app/
 
  
 ## What's in Store📐
@@ -25,6 +26,11 @@ The structure of the web app
 - assets- all common scripts and stylings (css), fonts used on the pages, theme scripts included in script.js file
 - src - all jsx files
 - components - all react components
+
+## Hosting
+- Vercel - continous delivery/ Automatically deploys app each time you commit to the master branch
+- Heroku - great option but slow
+
 
 
 # Getting Started with Create React App
