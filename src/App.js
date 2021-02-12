@@ -1,6 +1,4 @@
-// @flow
-
-import { React, ReactNode , Component} from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import { Switch, Route } from "react-router-dom";
 import { createStructuredSelector } from "reselect";
@@ -16,8 +14,8 @@ import { selectCurrentUser } from './Redux/User/user.selector';
 import { fetchCollectionStart } from './Redux/Shop/shop.actions'
 import { selectIsCollectionFetching } from './Redux/Shop/shop.selector'
 import { SpinnerRoundFilled, SpinnerDotted } from 'spinners-react';
-import Helmet from 'react-helmet'
-import { ReactSEOMetaTags } from 'react-seo-meta-tags'
+import MetaTags from 'react-meta-tags';
+
 // Styling and Plugins
 import './assets/vendor/line-awesome/line-awesome/line-awesome/css/line-awesome.min.css'
 import 'react-toastify/dist/ReactToastify.min.css';
@@ -35,8 +33,7 @@ import image from './Images/fashion.jpg'
 
 
 
-class App extends Component {
-
+class App extends React.Component {
 
   unsubscribeFromAuth = null;
   componentDidMount() {
@@ -59,35 +56,18 @@ class App extends Component {
       fontSize: 200
     };
 
-    let siteMetadata = {
-      url: 'https://google.com/about',
-      title: 'Fashion Store',
-      datePublished: '2020-10-06T13:56:03.123Z',
-      description: 'A Modern fashion store where design meets sophisticaton',
-      language: 'en-US',
-      image: {image},
-      author: {
-        email: 'ianmwitumi@gmail.com',
-        name: 'Ian Kuria',
-        image: 'http://john.me/my-face.jpg',
-      },
-      site: {
-        siteName: 'Fashion Store',
-        searchUrl: 'https://fashion-store-tau.vercel.app/',
-      }
-    }
-
-
     return (
 
       <div className='App'>
         <div class='page-wrapper'>
-          <ReactSEOMetaTags
-            render={(el: React.ReactNode) => <Helmet>{el}</Helmet>}
-            website={{ ...siteMetadata }}
-          />
+        <MetaTags>
+            <title>Fashion Shop</title>
+            <meta name="description" content="A modern fashion store where fashion meets elegance." />
+            <meta property="og:title" content="Ecommerce" />
+            <meta property="og:image" content="https://ibb.co/f0WMLGJ" />
+            <meta property="og:image" content={image} />
+          </MetaTags>
           <Header />
-
           <Switch>
             {
               isCollectionFetching ?
@@ -98,19 +78,19 @@ class App extends Component {
               currentUser === null / undefined ?
                 <SpinnerDotted size={100} thickness={180} speed={91} color="rgba(172, 137, 57, 1)" style={styles} /> :
                 <Route exact path="/checkout" component={checkoutPage} />
-            }
+            } 
 
             {isCollectionFetching ?
               <SpinnerRoundFilled size={100} thickness={180} speed={91} color="rgba(172, 137, 57, 1)" style={styles} /> :
               <Route exact path="/shop" component={ShopPage} />}
-            <Route exact path="/login" component={SignInModal} />
-
+              <Route exact path="/login" component={SignInModal} />
+             
 
           </Switch>
-
+        
 
         </div>
-
+      
       </div>
 
     )
