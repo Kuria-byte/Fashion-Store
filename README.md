@@ -3,7 +3,7 @@
 ![image](https://user-images.githubusercontent.com/61579772/107755160-6b07ee00-6d5d-11eb-8678-c311265c996f.png)
 
 ## About
-This is an ecoomerce web application built using react inorder too grasp deeper state management concepts
+This is an ecommerce web application built using react inorder too grasp deeper state management concepts
 - https://fashion-store.kuria-byte.vercel.app/
 
  
