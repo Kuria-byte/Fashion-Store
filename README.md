@@ -29,7 +29,7 @@ The structure of the web app
 
 ## Hosting
 - Vercel - continous delivery/ Automatically deploys app each time you commit to the master branch
-- Heroku - great option but slow
+- Heroku - great option but abit slow
 
 
 
